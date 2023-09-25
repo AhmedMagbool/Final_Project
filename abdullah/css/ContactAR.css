@@ -296,6 +296,7 @@ textarea.input {
 }
 
 .social-icons a {
+  margin-top: 4rem;
   width: 35px;
   height: 35px;
   border-radius: 5px;
