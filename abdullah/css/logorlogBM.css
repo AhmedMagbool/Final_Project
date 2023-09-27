@@ -1,3 +1,8 @@
+body{
+    margin: 0%;
+    background-color: white;
+}
+
 div{
     height: 95vh;
     width: 100%;
@@ -5,19 +10,30 @@ div{
     flex-direction:row ;
     align-items: center;
     justify-content: center;
+    gap: 10rem;
 }
-.con{
-    background-color: #777;
-    width: 80vh;
-    height: 70vh;
-    border: 2px solid black;
-    border-radius: 15px;
-    box-shadow: 5px black;
+h1{
+    font-size: 40px;
+}
+.con-a{
     display: flex;
     flex-direction:row ;
     align-items: center;
     justify-content: center;
     gap: 5rem;
+margin-bottom: 5rem;
+}
+.con{
+
+    display: flex;
+    flex-direction:column ;
+    width: 350px;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
 }
 button {
    
