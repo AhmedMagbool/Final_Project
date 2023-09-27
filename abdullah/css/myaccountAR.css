@@ -26,7 +26,9 @@ label.btn {
     background  : transparent;
     color       : #26B4FF;
 }
-
+.list-group{
+    text-align: right;
+}
 .btn {
     cursor: pointer;
 }
