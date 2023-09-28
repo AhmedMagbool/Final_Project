@@ -5,11 +5,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./prodect.css">
+    <link rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
 </head>
 <body>
-    <div  class="container">
-            
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo"><span>E</span>Commerce</a>
+            <i class='bx bx-shopping-bag' id="cart-icon" ></i>  
+
+            <div class="cart">
+               <h2 class="cart-title">سلة التسوق</h2> 
+
+               <div class="cart-content">
+                
+               </div>
+               
+               <div class="total" dir="ltr">
+                <div class="total-title">الاجمالي</div>
+                <div class="total-price">0</div>
+                 
+            </div>
+
+            <button type="button" class="btn-buy">Buy Now</button>
+
+            <i class='bx bx-x' id="cart-close"></i>
+
+
+
+            </div>
+
+           
+
         </div>
+    </header>
+    
+ 
+   
+<!-- 
+<div id="filterButtons" dir="rtl">
+    <button class="btn active" onclick="filterSelection('all')">جميع المنتجات</button>
+    <button class="btn " onclick="filterSelection('all')">الخضار والفواكه</button>
+    <button class="btn " onclick="filterSelection('all')">المشروبات</button>
+    <button class="btn " onclick="filterSelection('all')">منتجات الألبن والبيض</button>
+    <button class="btn " onclick="filterSelection('all')">المعلبات</button>
+    <button class="btn " onclick="filterSelection('all')">المنظفات</button>
+
+</div> -->
+
+<!--  -->
+<section class="shop container">
+    <h2 class="section-title">المنتجات</h2>
+</section>
+<!--  -->
+<div class="shop-content">
+    <!-- box1 -->
+    <div class="product-box">
+        <img src="./674259_main.avif" alt="" class="product-img">
+        <h2 class="product-title">عافية فلفل حار مجروش 100 جرام</h2>
+        <span class="product-price">8.25ريال</span>
+        <i class='bx bx-shopping-bag add-cart'></i>  
+    </div>
+    <!-- box2 -->
+    <div class="product-box">
+        <img src="./1700Wx1700H_638745_main.avif" alt="" class="product-img">
+        <h2 class="product-title"> زيت عافية للطبخ 1.5 لتر × 2</h2>
+        <span class="product-price">25.95ريال</span>
+        <i class='bx bx-shopping-bag add-cart'></i>  
+    </div>
+    <!-- box3 -->
+    <div class="product-box">
+        <img src="./636511_main.avif" alt="" class="product-img">
+        <h2 class="product-title">تاج محل ارز بسمتي بنجابي 5 كج</h2>
+        <span class="product-price">48.95ريال</span>
+        <i class='bx bx-shopping-bag add-cart'></i>  
+    </div>
+    <!-- box4 -->
+    <div class="product-box">
+        <img src="./521002_main.avif" alt="" class="product-img">
+        <h2 class="product-title">هناء طماطم كاملة مقشرة 400 جرام</h2>
+        <span class="product-price">3.95ريال</span>
+        <i class='bx bx-shopping-bag add-cart'></i>  
+    </div>
+    <!-- box5 -->
+    <div class="product-box">
+        <img src="./596055_main.avif" alt="" class="product-img">
+        <h2 class="product-title">قودي صلصة مكرونة 420 جرام</h2>
+        <span class="product-price">15.55ريال</span>
+        <i class='bx bx-shopping-bag add-cart'></i>  
+    </div>
+    <!-- box6 -->
+    <div class="product-box">
+        <img src="./675648_main.avif" alt="" class="product-img">
+        <h2 class="product-title">جلاكسي كراميل ميني 266 جرام</h2>
+        <span class="product-price">16.95ريال</span>
+        <i class='bx bx-shopping-bag add-cart'></i>  
+    </div>
+    <!-- box7 -->
+    <div class="product-box">
+        <img src="./674827_main.avif" alt="" class="product-img">
+        <h2 class="product-title">جلاكسي شوكولاتة ميني 266 جرام</h2>
+        <span class="product-price">16.95ريال</span>
+        <i class='bx bx-shopping-bag add-cart'></i>  
+    </div>
+    <!-- box8 -->
+    <div class="product-box">
+        <img src="./1700Wx1700H_690916_main.avif" alt="" class="product-img">
+        <h2 class="product-title">صني زيت نباتي 1.5 لتر × 2</h2>
+        <span class="product-price">33.10ريال</span>
+        <i class='bx bx-shopping-bag add-cart'></i>  
+    </div>
+    <!-- box9 -->
+    <div class="product-box">
+        <img src="./8526_main.avif" alt="" class="product-img">
+        <h2 class="product-title">ربيع شاي اكسبريس فرط حبيبات 400 جرام</h2>
+        <span class="product-price">15.95ريال</span>
+        <i class='bx bx-shopping-bag add-cart'></i>  
+    </div>
+    <!-- box10 -->
+    <div class="product-box">
+        <img src="./51766_main.avif" alt="" class="product-img">
+        <h2 class="product-title">كوبوليفا زيتون أسود حبة كاملة 100 جرام</h2>
+        <span class="product-price">5.55ريال</span>
+        <i class='bx bx-shopping-bag add-cart'></i>  
+    </div>
+    <!-- box11 -->
+    <div class="product-box">
+        <img src="./126265_main.avif" alt="" class="product-img">
+        <h2 class="product-title">قودي معكرونة خواتم صغيرة 500 جرام</h2>
+        <span class="product-price">4.45ريال</span>
+        <i class='bx bx-shopping-bag add-cart'></i>  
+    </div>
+    <!-- box12 -->
+    <div class="product-box">
+        <img src="./126269_main.avif" alt="" class="product-img">
+        <h2 class="product-title">قودي مكرونة اصداف 500 جرام</h2>
+        <span class="product-price">4.45ريال</span>
+        <i class='bx bx-shopping-bag add-cart'></i>  
+    </div>
+    <!-- box13 -->
+    <div class="product-box">
+        <img src="./26597_main.avif" alt="" class="product-img">
+        <h2 class="product-title">لونا حمص 400 جرام</h2>
+        <span class="product-price">4.25ريال</span>
+        <i class='bx bx-shopping-bag add-cart'></i>  
+    </div>
+    <!-- box14 -->
+    <div class="product-box">
+        <img src="./674032_main.avif" alt="" class="product-img">
+        <h2 class="product-title">ندى مدمس سادة 400 جرام</h2>
+        <span class="product-price">4.25ريال</span>
+        <i class='bx bx-shopping-bag add-cart'></i>  
+    </div>
+    <!-- box15 -->
+    <div class="product-box">
+        <img src="./677604_main.avif" alt="" class="product-img">
+        <h2 class="product-title">بيوقلز قراقيش ذرة حار مثل النار 195 جرام</h2>
+        <span class="product-price">12.00ريال</span>
+        <i class='bx bx-shopping-bag add-cart'></i>  
+    </div>
+    <!-- box16 -->
+    <div class="product-box">
+        <img src="./677605_main.avif" alt="" class="product-img">
+        <h2 class="product-title">بيوقلز جبنة الناتشو حجم كبير 195 جرام</h2>
+        <span class="product-price">12.00ريال</span>
+        <i class='bx bx-shopping-bag add-cart'></i>  
+    </div>
+    
+    
+</div>
+
+
+<!-- 
+<section class="container">
+<div class="products">
+ 
+ </div> 
+</div>
+
+</section>
+
+ -->
+
+
+
+
+
+
         <script src="./prodect.js"></script>
 </body>
 </html>
