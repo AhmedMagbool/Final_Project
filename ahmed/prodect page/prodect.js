@@ -1,129 +1,3 @@
-// let productclassification = [
-//     "خضار وفواكه",
-//     "التظيف والغسيل",
-//     "الأطعمة المجمدة",
-//     "الأطعمة المعلبة",
-//     "الافطار",
-//     "الطبخ",
-//     "الحليب",
-//     "الايس كريم",
-//     "القهوة والشاي",
-//     "المشروبات",
-//     "سناكات وحلويات",
-//     "المخبوزات",
-//     "منجات الألبان والبيض",
-//     "الدجاج والاسماك",
-//     "خضار وفواكه",
-
-
-
-// ];
-
-// let descriptionarray = [
-//     "    ",
-//     "  cc ",
-//     "   ",
-//     "   ",
-//     "   ",
-//     "   ",
-//     "   ",
-//     "   ",
-//     "   ",
-//     "   ",
-//     "   ",
-//     "   ",
-//     "   ",
-//     "   ",
-//     "   "
-
-
-// ];
-// let img=[
-//     "فواكه.jpg",
-//     "فواكه.jpg",
-//     "فواكه.jpg",
-//     "فواكه.jpg",
-//     "فواكه.jpg",
-//     "فواكه.jpg",
-//     "فواكه.jpg",
-//     "فواكه.jpg",
-//     "فواكه.jpg",
-//     "فواكه.jpg",
-//     "فواكه.jpg",
-//     "فواكه.jpg",
-//     "فواكه.jpg",
-//     "فواكه.jpg",
-//     "فواكه.jpg",
-// ];
-
-// let d = document.querySelector(".products");
-
-// for (let i = 0; i < productclassification.length; i++){
-//     let f = document.querySelector(".products").innerHTML;
-//     d.innerHTML = ` <div id = "product${i}" class="product>
-    
-    
-//     <div class="product${[i]}">
-//     <img src="${img[i]}" class="prodect__image">
-//     <h5 class="prodect-title">${productclassification[i]}</h5>
-//     <span>${descriptionarray[i]}</span>
-//     <div class="shop-item-details">
-//     <h3 class="prodect__Price"></h3>
-//     <button class="btn">Add to Cart</button>
-//     </div>
-//     </div>
-// </div>` + f;
-// let b = document.getElementById(`product${i}`);
-// // b.style.backgroundImage = `url('./${productclassification[i]}.jpg' )`
-// };
-
-// filterSelection("all")
-// function filterSelection(c){
-//     var x,  y;
-//     x = document.getElementsByClassName("products");
-//     if (c == "all") c = "";
-//     for(y = 0; y < x.length; y++) {
-//      w3RemooveClass(x[y], "show");
-//      if (x[y].className.indexOf(c) > -1)   
-//      w3AddClass(x[y], "show");
-//     }   
-// }
-
-// function w3AddClass(element, name) {
-// var y, arr1, arr2;
-// arr1 = element.className.split("");
-// arr2 = name.split(" ");
-// for(y = 0; y < arr2.length; y++) {
-//     if (arr2.indexOf(arr2[i]) == -1) {
-//         element.className += " " + arr2[y];
-//     }
-// }  
-// }
-
-
-// function w3RemooveClass(element, name) {
-//   var y, arr1, arr2;
-//   arr1 = element.className.split(" ");
-//   arr2 = name.split(" ");
-//   for(y = 0; y < arr2.length; y++){
-//     while (arr1.indexOf(arr2[y]) > -1) {
-//         arr1.splice(arr1.indexOf(arr2[y]), 1);
-//     }
-//   } 
-//   element.className = arr1.join(" ");
-// }
-
-// var btnContainer = document.getElementById("filterSelection");
-
-// var btns = btnContainer.getElementsByClassName("btn");
-
-// for (var y = 0; y < btns.length; y++) {
-//     btns[y].addEventListener("click", function () {
-//        var current = document.getElementsByClassName("active");
-//        current[0].className = current[0].className.replace(" active", "");
-//        this.className += " active";
-//     });
-// }
 
 
 
@@ -200,7 +74,7 @@ function handle_addCartItem(){
     };
     //
     if(itemAdded.find(el => el.title == newToAdd.title)){
-        alert("This Item Is Already Exist!");
+        alert("المنتج موجود بالفعل في السلة");
         return;
     }else{
         itemAdded.push(newToAdd); 
@@ -233,12 +107,12 @@ update();
 
 function handle_buyOrder(){
     if(itemAdded.length <= 0) {
-        alert("There is no order to place yet! \nPlease Make an Order first.");
+        alert("لا يوجد منتجات في السلة .");
         return;
     }
     const cartContent = cart.querySelector(".cart-content");
     cartContent.innerHTML = "";
-    alert("Your Order is Placed Successfuly :)");
+    alert("تم قبول طلبك بنجاح وسيتم تجهيزه");
     itemAdded = [];
     update();
 }
